@@ -29,7 +29,7 @@ class OrdersAdapter(private val ordersList: List<Order>) : RecyclerView.Adapter<
         val orderDestination = holder.orderDestination
         orderDescription.text = order.description
         orderDestination.text = order.destination
-        orderPrice.text = order.price
+        orderPrice.text = order.price.toString()
     }
 
     override fun getItemCount(): Int = ordersList.size
